@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>selecionando elementos pelo seu atributo</title>
+</head>
+<body>
+    <h1>minha lista 1</h1>
+    <input type="text" id="novo" name="novo">
+    <ul id="lista1">
+        <li key="1" class="item">item 1</li>
+        <li key="2" class="item">item 2</li>
+        <li key="3" class="item">item 3</li>
+        <li key="4" class="item">item 4</li>
+        <li key="5" class="item">item 5</li>
+    </ul>
+
+    <ul id="lista2">
+        <li key="1" class="item">item 1</li>
+        <li key="2" class="item">item 2</li>
+        <li key="3" class="item">item 3</li>
+        <li key="4" class="item">item 4</li>
+        <li key="5" class="item">item 5</li>
+    </ul>
+    <button id="button">clique aqui</button>
+
+    <script>
+        // $("[key = 1]").remove()
+        $("#lista1").find("[key = 1]").remove()
+    </script>
+</body>
+</html>
